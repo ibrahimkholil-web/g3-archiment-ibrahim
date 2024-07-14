@@ -1,0 +1,127 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* shere all style */
+.work-sans{
+    font-family: "Work Sans", sans-serif; 
+  }
+.flex-display{
+    display: flex;
+}  
+.bg-1{
+    background: rgba(255, 144, 14, 0.1);
+}
+.all-des-style{
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+}
+.btn-primary{
+    background-color:rgb(255, 144, 14) ;
+    border: none;
+    border-radius: 8px;
+    width: 180px;
+    height: 64px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;;
+    font-weight: 600;
+   
+}
+/* navbar section start here */
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.brand{
+    color: rgb(19, 19, 19);
+    font-size: 2.5rem;
+   font-weight: 700;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+/* navbar section ends here */
+
+/* banner section start here */
+.banner-contact{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.banner-title{
+    color: rgb(19, 19, 19);
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-des{
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.banner-img{
+    width: 100%;
+    margin-bottom: 2.9rem;
+}
+/* banner section ends here */
+/* Features section start here */
+#Features{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.features-content{
+    margin: 3.8rem;
+    align-items: center;
+}
+.features-left{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 0.5rem;
+}
+.features-right{
+    max-width: 537px;
+    margin: 0 auto;
+}
+.features-title{
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: rgb(114, 114, 114);
+   
+}
+.featurs-1{
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: black;
+}
+.featurs-2{
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: rgb(255, 144, 14);
+}
+/* Features section ends here */
+
+@media screen and (max-width: 576px) {
+    .navbar,
+    .features-content{
+        flex-direction: column;
+    }
+    .features-left{
+       
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-width : 577px) and (max-width: 992px) {
+    .features-content{
+        flex-direction: column;
+    }
+}
